@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { BrainCircuit, Menu, X, Mail, MessageSquare, Send } from "lucide-react"
+import { BrainCircuit, Menu, X, Mail, MessageSquare, } from "lucide-react"
 import Link from "next/link"
 import { motion, AnimatePresence } from 'framer-motion'
 
@@ -80,7 +80,7 @@ export default function ContactPage() {
                   Get in Touch with <span className="text-primary">Starbrains</span>
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  We're here to answer any questions you have about our services. Reach out to us and let's start a conversation.
+                  We&apos;re here to answer any questions you have about our services. Reach out to us and let&apos;s start a conversation.
                 </p>
               </motion.div>
             </div>

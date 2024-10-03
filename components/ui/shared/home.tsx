@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { BrainCircuit, Code, Github, Laptop, Menu, Terminal, X, ChevronRight } from "lucide-react"
+import { BrainCircuit,  Github, Laptop, Menu, Terminal, X, ChevronRight } from "lucide-react"
 import Link from "next/link"
 import { motion, AnimatePresence } from 'framer-motion'
 
@@ -116,9 +116,8 @@ export default function LandingPage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="space-x-4"
               >
-                <Button size="lg" className="bg-primary text-white hover:bg-primary/90">Get Started</Button>
-                <Button size="lg" variant="outline">Learn More</Button>
-              </motion.div>
+                <a href="/dashboard"><Button size="lg" className="bg-primary text-white hover:bg-primary/90">Get Started</Button></a>
+                </motion.div>
             </div>
           </div>
         </section>
@@ -190,10 +189,10 @@ export default function LandingPage() {
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                   Starbrains is at the forefront of machine learning innovation. We provide cutting-edge tools and platforms to empower data scientists and ML engineers to build, deploy, and manage their projects with unprecedented ease and efficiency.
                 </p>
-                <Button className="w-fit group">
-                  Learn More About Us
+                <a href="/dashboard"><Button className="w-fit group">
+                  Get Started
                   <ChevronRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Button>
+                </Button></a>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
