@@ -1,12 +1,3 @@
 {
-  "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended"
-  ],
-  "rules": {
-    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
-    "@typescript-eslint/no-explicit-any": "error",
-    "@typescript-eslint/no-empty-interface": "error",
-    "@typescript-eslint/no-empty-object-type": "error"
-  }
+  "extends": ["next/core-web-vitals", "next/typescript"]
 }
